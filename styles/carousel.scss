@@ -1,0 +1,16 @@
+$animationSpeed: 50s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-240px * 7 + 50px))}
+}
+
+// Styling
+.partners-carousel-panel {
+	
+	.carousel-items {
+		animation: scroll $animationSpeed linear infinite;
+	}
+	
+}

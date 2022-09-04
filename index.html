@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZIPfutbolka</title>
+	<meta charset="utf-8"/>
+    <link type="text/css" rel="stylesheet" href="styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="styles/indexstyle.css" />
+	<link rel="shortcut icon" href="images/logo.png" type="image/png">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="scripts/index_jq.js"></script>
+	<script src="scripts/sendjs.js"></script>
+</head>
+<body>
+    <div class="header-panel">
+        <div class="header-panel-logo"><img class="logo" src="images/logo.png" /></div>
+        <div class="header-panel-menu">
+            <ul>
+                <li class="active">главная</li>
+                <a href="about"><li>о компании</li></a>
+                <a href="catalog"><li>каталог</li></a>
+                <a href="print"><li>печать</li></a>
+                <a href="contacts"><li>контакты</li></a>
+            </ul>
+        </div>
+        <div class="header-panel-contacts">
+            <div>
+                <div class="contact-icon phone">
+                    <img src="images/phone.png" width="40" height="40"/>
+                </div>
+                <div class="inline-elem contact-description">+7 (915) 136 78 68</div>
+            </div>
+            <div>
+				<div class="contact-icon mail">
+					<img src="images/mail.png" width="35" height="35"/>
+				</div>
+				<div class="inline-elem contact-description">zipfutbolka@mail.ru</div>
+			</div>
+        </div>
+    </div>
+	<div class="main-content">
+		<div class="image-block">
+			<div class="image-shadow"></div>
+			<div class="redtsh"><img src="images/index/redtsh.png"/></div>
+			<div class="rectangle-decorate1">
+			</div>
+			<div class="rectangle-decorate2">
+			</div>
+		</div>
+		<div class="text-block">
+			<div class="text-block-caption">Футболки</div>
+			<div class="actes">
+			Производство<br/>
+			Оптовая продажа<br/>
+			Индивидуальный пошив<br/>
+			Брендирование и печать<br/>
+			</div>
+			<div class="tsh-panels">
+				<a href="catalog#catalog"><div class="tsh-panel">
+					<div class="tsh-panel-text">
+						футболки<br/>с коротким рукавом
+					</div>
+					<img src="images/index/shorttsh.png" width="50px" height="50px"/>
+					<div class="tsh-panel-price">
+						от 200 руб.
+					</div>
+				</div>
+				</a>
+				<a href="catalog#catalog">
+				<div class="tsh-panel middle">
+					<div class="tsh-panel-text">
+						футболки<br/>с длинным рукавом
+					</div>
+					<img src="images/index/longtsh.png" width="50px" height="50px"/>
+					<div class="tsh-panel-price">
+						от 200 руб.
+					</div>
+				</div>
+				</a>
+				<a href="catalog#catalog">
+				<div class="tsh-panel">
+					<div class="tsh-panel-text">
+						футболки<br/>поло
+					</div>
+					<img src="images/index/polo.png" width="50px" height="50px"/>
+					<div class="tsh-panel-price">
+						от 200 руб.
+					</div>
+				</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="feedback-panel">
+		<div class="feedback-caption">
+			Введите свои контактные данные и мы отправим Вам каталог по e-mail
+		</div>
+		<div class="inputs-panel">
+				<div class="input-block">
+					<input class="text-input" name="name-input" type="text" placeholder="Ваше Имя"  value="" onchange="privacyInputCheck()"/>
+				</div>
+				<div class="input-block">
+					<input class="text-input" name="phonemail-input" type="text" placeholder="Ваш e-mail" value="" onchange="privacyInputCheck()"/>
+				</div>
+				<div class="input-block">
+					<input class="button-input" type="button" value="отправить" disabled="true"/>
+				</div>
+		</div>
+		<div class="privacy-panel">
+			<label class="privacy-input">
+			<input class="custom-input" type="checkbox" onclick="privacyInputCheck()"/>
+			<div class="custom-input-text"> Отправляя свои контактные данные, я соглашаюсь с&nbsp;<a href="privacy.pdf">Политикой конфиденциальности</a></div>
+	</label>
+		</div>
+	</div>
+	<div class="production-panel">
+		<div class="production-line"></div>
+		<div class="production-caption caption">
+		Производство<div class="production-line-bottom"></div>
+		</div>
+	</div>	
+	<div class="about-panel">
+		<div class="about-text-panel">
+			<div class="about-text">
+			Наша компания имеет собственное производство в Узбекистане.<br/>Фабрика была выбрана путём конкурсного отбора по критериям оснащённости производства,<br/> суточной производительности, качества пошива и исполнения обязательств<br/> по срокам выполнения крупных заказов
+			</div>			
+		</div>
+	</div>
+	<div class="textile-panel">
+		<div class="textile-left-block"></div>
+		<div class="textile-right-block">
+			<div class="textile-caption-block">
+				<div class="textile-caption caption">Ткани
+				<div class="textile-line-bottom"></div>
+				</div>
+			</div>
+			<div class="textile-right-line-block">
+				<div class="textile-line-right"></div>
+			</div>
+		</div>
+	</div>
+	<div class="textile-about-panel">
+		<div class="textile-image-block">
+			<div class="cotton-image-shadow"></div>
+				<div class="cotton">
+				<img height="328px" width="491px" src="images/index/cotton1.png"/>
+			</div>
+			<div class="cotton-decorate">cotton</div>
+			<div class="supreme-decorate">supreme</div>
+		</div>
+		<div class="textile-about-text">
+		Для пошива футболок мы используем самый качественный<br/> трикотаж Супрем. Эта ткань известна своей<br/> эластичностью, мягкостью и эстетикой.<br/>
+		<div class="textile-about-text-p">Футболки из трикотажа Супрем не теряют свою<br/> первоначальную форму даже после множества стирок,<br/> материал прост в уходе, не мнётся и идеально пропускает<br/> воздух.</div>
+		</div>
+	</div>
+	<div class="order-panel">
+		<div class="production-line"></div>
+		<div class="production-caption caption">
+		От заказа до получения<div class="production-line-bottom"></div>
+		</div>
+	</div>
+	<div class="slider-panel">
+		<div class="elem active-elem-panel">
+			<div class="active-elem-caption" id="act-elem1" style="top: 33px;">Оформление заказа
+			</div>
+			<div class="active-elem-caption" id="act-elem2" style="display: none;">Оплата
+			</div>
+			<div class="active-elem-caption" id="act-elem3" style="display: none;">Производство
+			</div>
+			<div class="active-elem-caption" id="act-elem4" style="display: none;">Печать
+			</div>
+			<div class="active-elem-caption" id="act-elem5" style="display: none; top: 23px;">Комплектация
+			</div>
+			<div class="active-elem-caption" id="act-elem6" style="display: none;">Доставка
+			</div>
+			<div class="active-elem-description" id="act-elem1">Оформить заказ можно по телефону<br/>или посредством электронной почты. 
+			</div>
+			<div class="active-elem-description" id="act-elem2" style="display: none; top: 44px;">Заказ оплачивается на условиях 100%<br/> предоплаты. Счёт направляется Вам<br/> посредством электронной почты.<br/>
+Для постоянных клиентов возможна<br/> отсрочка платежа. 
+			</div>
+			<div class="active-elem-description" id="act-elem3" style="display: none; top: 44px;">Если на складе не оказалось нужного<br/> количества, заказ полностью отдаётся<br/> в производство. В зависимости от объёма,<br/> время выполнения может составить <br/>1-10 дней. 
+			</div>
+			<div class="active-elem-description" id="act-elem4" style="display: none; top: 49px;">Товар с производства на печать<br/> направляется партиями, в связи с чем <br/> время выполнения заказа совпадает<br/>со сроками производства.
+			</div>
+			<div class="active-elem-description" id="act-elem5" style="display: none; top: 64px;">Заказ упаковывают по типу и размерным <br/>сеткам, для удобства приёмки<br/> заказчиком.
+			</div>
+			<div class="active-elem-description" id="act-elem6" style="display: none; top: 54px;">Заказы по Москве и Московской области<br/> доставляются бесплатно. <br/>
+Для регионов действует бесплатная<br/> доставка до транспортной компании. 
+			</div>
+		</div>
+		<div class="elem-icon" id="elem1" title="Оформление заказа" onclick="testing('elem1')" style="left: 404px;">
+			<img height="40px" width="40px" src="images/index/order/make.png"/>
+		</div>
+		<div class="elem-icon" id="elem2" title="Оплата" onclick="testing('elem2')" style="left: 494px;">
+			<img height="40px" width="40px" src="images/index/order/pay.png"/>
+		</div>
+		<div class="elem-icon" id="elem3" title="Производство" onclick="testing('elem3')" style="left: 584px;">
+			<img height="40px" width="40px" src="images/index/order/processing.png"/>
+		</div>
+		<div class="elem-icon" id="elem4" title="Печать" onclick="testing('elem4')" style="left: 674px;">
+			<img height="40px" width="40px" src="images/index/order/print.png"/>
+		</div>
+		<div class="elem-icon" id="elem5" title="Комплектация" onclick="testing('elem5')" style="left: 764px;">
+			<img height="40px" width="40px" src="images/index/order/complectation.png"/>
+		</div>
+		<div class="elem-icon" id="elem6" title="Доставка" onclick="testing('elem6')" style="left: 854px;">
+			<img height="40px" width="40px" src="images/index/order/ship.png"/>
+		</div>
+	</div>	
+	<div class="footer-panel">
+		<div class="links">
+			<div class="links-panel">
+			<div class="logo-big">
+				<img height="180px" width="180px" src="images/logobig.png"/>
+			</div>
+			<div class="links-block1">
+			<p><a href="index">Главная</a></p>
+			<p><a href="about">О компании</a></p>
+			<p><a href="catalog">Каталог</a></p>
+			<p><a href="print">Печать</a></p>
+			<p><a href="contacts">Контакты</a></p>
+			</div>
+			<div class="links-block2">
+			<p><a href="catalog#catalog">Футболки</a></p>
+			<p><a href="catalog#catalog">Футболки с длинным рукавом</a></p>
+			<p><a href="catalog#catalog">Футболки поло</a></p>
+			<p><a href="catalog#catalog">Бейсболки</a></p>
+			</div>
+			<div class="contacts">	
+			<div>
+                <div class="contact-icon phone">
+                    <img src="images/phone.png" width="40" height="40"/>
+                </div>
+                <div class="inline-elem contact-description">+7 (915) 136 78 68</div>
+            </div>
+            <div>
+				<div class="contact-icon mail">
+					<img src="images/mail.png" width="35" height="35"/>
+				</div>
+				<div class="inline-elem contact-description">zipfutbolka@mail.ru</div>
+			</div>
+			</div>
+			</div>
+		</div>
+		<div class="copyright">&copy; 2009-2020 Компания «ZIPfutbolka». Все права защищены</div>
+	</div>
+</body>
+</html>

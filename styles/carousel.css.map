@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,iBAGC;EAFA,EAAG;IAAE,SAAS,EAAE,aAAa;EAC7B,IAAK;IAAE,SAAS,EAAE,mCAAmC;AAMrD,wCAAgB;EACf,SAAS,EAAE,0BAAsC",
+"sources": ["carousel.scss"],
+"names": [],
+"file": "carousel.css"
+}

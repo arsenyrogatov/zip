@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Контакты - ZIPfutbolka</title>
+	<meta charset="utf-8"/>
+    <link type="text/css" rel="stylesheet" href="styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="styles/contactstyle.css" />
+	<link rel="shortcut icon" href="images/logo.png" type="image/png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="scripts/inptscheck.js"></script>
+	<script src="scripts/sendjs.js"></script>
+</head>
+<body>
+    <div class="header-panel">
+        <div class="header-panel-logo"><img class="logo" src="images/logo.png" /></div>
+        <div class="header-panel-menu">
+            <ul>
+                <a href="index"><li>главная</li></a>
+                <a href="about"><li>о компании</li></a>
+                <a href="catalog"><li>каталог</li></a>
+                <a href="print"><li>печать</li></a>
+                <li class="active">контакты</li>
+            </ul>
+        </div>
+        <div class="header-panel-contacts">
+            <div>
+                <div class="contact-icon phone">
+                    <img src="images/phone.png" width="40" height="40"/>
+                </div>
+                <div class="inline-elem contact-description">+7 (915) 136 78 68</div>
+            </div>
+            <div>
+				<div class="contact-icon mail">
+					<img src="images/mail.png" width="35" height="35"/>
+				</div>
+				<div class="inline-elem contact-description">zipfutbolka@mail.ru</div>
+			</div>
+        </div>
+    </div>
+	
+	<div class="contacts-caption-panel">
+		<div class="contacts-caption-left-line-block">
+			<div class="contacts-middle-line">
+			</div>	
+		</div>
+		<div class="contacts-caption-text">Контакты
+		<div class="contacts-bottom-line">
+			</div>	
+		</div>
+		<div class="contacts-caption-right-line-block">
+			<div class="contacts-bottom-line">
+			</div>	
+		</div>	
+	</div>
+	
+	<div class="map-panel"> 
+		<iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.7291614271403!2d37.370960315937744!3d55.936732980602976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53edefcfef277%3A0x26ae512896472bb4!2z0JvQtdC90LjQvdCz0YDQsNC00YHQutC-0LUg0YguLCAyNjYsINCc0L7RgdC60LLQsCwgMTQxNDA4!5e0!3m2!1sru!2sru!4v1596178296748!5m2!1sru!2sru" aria-hidden="false" tabindex="0"></iframe>
+		<div class="map-info-block">
+			<div class="map-info-block-caption">
+			Компания «ZIPfutbolka»
+			</div>			
+			<div class="map-info-block-line"> 
+			</div>
+			<div class="map-info-block-content"> 
+				<div class="phone-block">
+					<div class="phone-caption">телефон:
+					</div>
+					<div class="phone-content">+7 (915) 136 78 68<br/>+7 (903) 618 87 32
+					</div>
+				</div>
+				<div class="phone-block">
+					<div class="email-caption">e-mail:
+					</div>
+					<div class="email-content">zipfutbolka@mail.ru
+					</div>
+				</div>
+				<div class="phone-block">
+					<div class="adress-caption">Адрес:
+					</div>
+					<div class="adress-content">Москва, Ленинградское шоссе д. 266
+					</div>
+				</div>
+				<div class="phone-block">
+					<div class="adress-sk-caption">Адрес склада:
+					</div>
+					<div class="adress-sk-content">Москва, Ленинградское шоссе д. 266
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="feedback-panel">
+		<div class="feedback-caption">
+			Заказать обратный звонок
+		</div>
+		<div class="inputs-panel">
+				<div class="input-block">
+					<input class="text-input" name="name-input" type="text" placeholder="Ваше Имя" onchange="privacyInputCheck(0)"/>
+				</div>
+				<div class="input-block">
+					<input class="text-input" name="phonemail-input" type="text" placeholder="Ваш телефон" onchange="privacyInputCheck(0)"/>
+				</div>
+				<div class="input-block">
+					<input class="button-input" type="button" value="заказать" disabled="true"/>
+				</div>
+		</div>
+		<div class="privacy-panel">
+			<label class="privacy-input">
+			<input class="custom-input" type="checkbox"  onclick="privacyInputCheck(0)"/>
+			<div class="custom-input-text"> Отправляя свои контактные данные, я соглашаюсь с&nbsp;<a href="privacy.pdf">Политикой конфиденциальности</a></div>
+	</label>
+	</div>
+	</div>
+	
+	<div class="footer-panel">
+		<div class="links">
+			<div class="links-panel">
+			<div class="logo-big">
+				<img height="180px" width="180px" src="images/logobig.png"/>
+			</div>
+			<div class="links-block1">
+			<p><a href="index">Главная</a></p>
+			<p><a href="about">О компании</a></p>
+			<p><a href="catalog">Каталог</a></p>
+			<p><a href="print">Печать</a></p>
+			<p><a href="contacts">Контакты</a></p>
+			</div>
+			<div class="links-block2">
+			<p><a href="catalog#catalog">Футболки</a></p>
+			<p><a href="catalog#catalog">Футболки с длинным рукавом</a></p>
+			<p><a href="catalog#catalog">Футболки поло</a></p>
+			<p><a href="catalog#catalog">Бейсболки</a></p>
+			</div>
+			<div class="contacts">	
+			<div>
+                <div class="contact-icon phone">
+                    <img src="images/phone.png" width="40" height="40"/>
+                </div>
+                <div class="inline-elem contact-description">+7 (915) 136 78 68</div>
+            </div>
+            <div>
+				<div class="contact-icon mail">
+					<img src="images/mail.png" width="35" height="35"/>
+				</div>
+				<div class="inline-elem contact-description">zipfutbolka@mail.ru</div>
+			</div>
+			</div>
+			</div>
+		</div>
+		<div class="copyright">&copy; 2009-2020 Компания «ZIPfutbolka». Все права защищены</div>
+	</div>
+</body>
+</html>

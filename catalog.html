@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Каталог - ZIPfutbolka</title>
+	<meta charset="utf-8"/>
+    <link type="text/css" rel="stylesheet" href="styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="styles/catalogstyle.css" />
+
+	<link rel="shortcut icon" href="images/logo.png" type="image/png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="scripts/catalog.js"></script>
+	<script src="scripts/inptscheck.js"></script>
+	<script src="scripts/sendjs.js"></script>
+</head>
+<body>
+	
+
+    <div class="header-panel">
+        <div class="header-panel-logo"><img class="logo" src="images/logo.png" /></div>
+        <div class="header-panel-menu">
+            <ul>
+                <a href="index"><li>главная</li></a>
+                <a href="about"><li>о компании</li></a>
+                <li class="active">каталог</li>
+                <a href="print"><li>печать</li></a>
+                <a href="contacts"><li>контакты</li></a>
+            </ul>
+        </div>
+        <div class="header-panel-contacts">
+            <div>
+                <div class="contact-icon phone">
+                    <img src="images/phone.png" width="40" height="40"/>
+                </div>
+                <div class="inline-elem contact-description">+7 (915) 136 78 68</div>
+            </div>
+            <div>
+				<div class="contact-icon mail">
+					<img src="images/mail.png" width="35" height="35"/>
+				</div>
+				<div class="inline-elem contact-description">zipfutbolka@mail.ru</div>
+			</div>
+        </div>
+    </div>
+	
+	<div class="feedback-top-panel">
+		<div class="feedback-block">
+			<div class="feedback-shadow">
+			</div>
+			<div class="feedback-image">
+				<img src="images/catalog/image1.png" height="470px"/>
+			</div>
+			<div class="feedback-text-block">
+				<div class="feedback-text-1">Почувствуйте качество!</div>
+				<div class="feedback-text-2">Оптовым клиентам мы отправим образец футболки</div>
+				<div class="feedback-text-3">бесплатно!</div>
+				<div class="feedback-button-top" onclick="showFeedbackPanel()">
+					<div class="feedback-button-decorate">			
+						<div class="feedback-button-text"> заказать обратный звонок</div>
+					</div>
+				</div>
+			</div>
+			<div class="feedback-text-block-active" style="display: none; opacity: 0;">
+				<div class="feedback-text-block-active-decorate" style="opacity: 0;"> 
+					<div class="feedback-text-block-active-main">
+						<div class="feedback-text-block-active-main-caption">Отправьте свои контактные данные,<br/>и мы перезвоним Вам в ближайшие 5 минут.
+						</div>
+						<div class="feedback-text-block-active-main-name-input">
+							<input class="text-input" name="name-input" type="text" placeholder="Ваше Имя" onchange="privacyInputCheck(0)"/>
+						</div>
+						<div class="feedback-text-block-active-main-phone-input">
+							<input class="text-input" name="phonemail-input" type="text" placeholder="Ваш телефон" onchange="privacyInputCheck(0)"/>
+						</div>
+						<div class="feedback-text-block-active-main-privacy">
+							<label class="privacy-input">
+							<input class="custom-input" type="checkbox" onclick="privacyInputCheck(0)"/>
+							<div class="custom-input-text"> Отправляя свои контактные данные, я соглашаюсь с&nbsp;<a href="privacy.pdf">Политикой конфиденциальности</a></div>
+							</label>
+						</div>
+						<div class="feedback-text-block-active-main-button">
+							<input class="button-input" type="button" value="отправить" disabled="true"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a id="catalog"></a>
+	<div class="catalog-caption-panel">
+		<div class="contacts-caption-left-line-block">
+			<div class="contacts-middle-line">
+			</div>	
+		</div>
+		<div class="catalog-caption-text">Каталог товаров
+		<div class="contacts-bottom-line">
+			</div>	
+		</div>
+		<div class="contacts-caption-right-line-block">
+			<div class="contacts-bottom-line">
+			</div>	
+		</div>	
+	</div>
+	
+	<div class="catalog-panel">
+		<div class="catalog-block">
+			<div class="decor left-decor">
+				<div class="left-decor-top">
+				</div>
+				<div class="left-decor-bottom">
+				</div>
+			</div>
+			
+			<div class="decor right-decor">
+				<div class="right-decor-top">
+				</div>
+				<div class="right-decor-bottom">
+				</div>
+			</div>
+			
+			<div class="items-block">
+				<div class="item">
+					<div class="item-header">
+						<div class="item-img-block">
+							<img class="item-img" src="images/catalog/goods/man-tsh/man-tsh-1.png"/>
+						</div>
+						<div class="item-caption">
+						Футболка с коротким рукавом
+						</div>		
+						<div class="item-description">
+						для мужчин
+						</div>		
+						<div class="control-block">
+							<div class="left-arr-button" onclick="switchImage(this,3)">
+								<img height="15px" src="images/catalog/arrow-left1.png"/>
+							</div>
+							<div class="zoom-button" onclick="zoomImage(this)">
+								<img height="20px" src="images/catalog/zoom1.png"/>
+							</div>
+							<div class="right-arr-button" onclick="switchImage(this,3)">
+								<img height="15px" src="images/catalog/arrow-right1.png"/>
+							</div>
+						</div>
+					</div>
+					<div class="colors-block">
+							<div class="color-circle white-color"></div>
+							<div class="color-circle black-color"></div>
+							<div class="color-circle pink-color"></div>
+							<div class="color-circle green-color"></div>
+							<div class="color-circle yellow-color"></div>
+							<div class="color-circle red-color"></div>
+							<div class="color-circle orange-color"></div>
+							<div class="color-circle blue-color"></div>
+							<div class="color-circle lightblue-color"></div>
+							<div class="color-circle grey-color"></div>
+							<div class="color-circle black-color"></div>
+							<div class="color-circle purple-color"></div>
+						</div>
+					<div class="item-description-block">
+						<div class="material-block">
+						Состав: 100% Хлопок (Суприм)
+						</div>
+						<div class="description-block">
+						Футболка мужская с коротким рукавом подойдёт для занятий спортом и в качестве базовой вещи гардероба.<br/>
+						Рибана на круглом вырезе  с добавлением 5 % лайкры позволяет сохранить форму и не растянуться. Стойкое качественное окрашивание сохраняет цвет и предотвращает от выгорания.   
+						</div>
+						<div class="density-block">
+						Плотность 155- 160 гр. м² (в зависимости от цвета)
+						</div>
+						<div class="price-block">
+							<div class="price-text">
+								Цена:
+							</div>
+							<div class="price-num">
+								150 руб.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item item2">
+					<div class="item-header">
+						<div class="item-img-block">
+							<img class="item-img" src="images/catalog/goods/man-tsh-long/man-tsh-long-1.png"/>
+						</div>
+						<div class="item-caption">
+						Футболка с длинным рукавом
+						</div>		
+						<div class="item-description">
+						для мужчин
+						</div>		
+						<div class="control-block">
+							<div class="left-arr-button">
+							</div>
+							<div class="zoom-button" onclick="zoomImage(this)">
+								<img height="20px" src="images/catalog/zoom1.png"/>
+							</div>
+							<div class="right-arr-button">
+							</div>
+						</div>
+					</div>
+					<div class="colors-block">
+							<div class="color-circle white-color"></div>
+							<div class="color-circle black-color"></div>
+							<div class="color-circle pink-color"></div>
+							<div class="color-circle green-color"></div>
+							<div class="color-circle yellow-color"></div>
+							<div class="color-circle red-color"></div>
+							<div class="color-circle orange-color"></div>
+							<div class="color-circle blue-color"></div>
+						</div>
+					<div class="item-description-block">
+						<div class="material-block">
+						Состав: 100% Хлопок (Суприм)
+						</div>
+						<div class="description-block">
+						Футболка мужская с длинным рукавом подойдёт для занятий спортом и в качестве базовой вещи гардероба.<br/>
+						Рибана на круглом вырезе  с добавлением 5 % лайкры позволяет сохранить форму и не растянуться. Стойкое качественное окрашивание сохраняет цвет и предотвращает от выгорания.    
+						</div>
+						<div class="density-block">
+						Плотность 155- 160 гр. м² (в зависимости от цвета)
+						</div>
+						<div class="price-block">
+							<div class="price-text">
+								Цена:
+							</div>
+							<div class="price-num">
+								150 руб.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+				<div class="item-header">
+						<div class="item-img-block">
+							<img class="item-img" src="images/catalog/goods/man-polo/man-polo-1.png"/>
+						</div>
+						<div class="item-caption">
+						Футболка поло
+						</div>		
+						<div class="item-description">
+						для мужчин
+						</div>		
+						<div class="control-block">
+							<div class="left-arr-button">
+							</div>
+							<div class="zoom-button" onclick="zoomImage(this)">
+								<img height="20px" src="images/catalog/zoom1.png"/>
+							</div>
+							<div class="right-arr-button">
+							</div>
+						</div>
+					</div>
+					<div class="colors-block">
+							<div class="color-circle white-color"></div>
+							<div class="color-circle black-color"></div>
+							<div class="color-circle pink-color"></div>
+							<div class="color-circle green-color"></div>
+							<div class="color-circle yellow-color"></div>
+							<div class="color-circle red-color"></div>
+							<div class="color-circle orange-color"></div>
+							<div class="color-circle blue-color"></div>
+							<div class="color-circle lightblue-color"></div>
+							<div class="color-circle grey-color"></div>
+						</div>
+					<div class="item-description-block">
+						<div class="material-block">
+						Состав: 100% Хлопок (Пенье)
+						</div>
+						<div class="description-block">
+						Знаменитая футболка поло - неотъемлемая часть мужского гардероба. Прямой крой , боковые разрезы, отложный воротник и три прозрачные пуговицы на планке. <br/>
+						Футболки поло отшиваются для магазинов одежды и для компаний, которые желают сделать корпоративный стиль своих сотрудников более элегантным.     
+						</div>
+						<div class="density-block">
+						Плотность 180 гр. м² (в зависимости от цвета)
+						</div>
+						<div class="price-block">
+							<div class="price-text">
+								Цена:
+							</div>
+							<div class="price-num">
+								150 руб.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-header">
+						<div class="item-img-block">
+							<img class="item-img" src="images/catalog/goods/wman-tsh/wman-tsh-1.png"/>
+						</div>
+						<div class="item-caption">
+						Футболка с коротким рукавом
+						</div>		
+						<div class="item-description">
+						для женщин
+						</div>		
+						<div class="control-block">
+							<div class="left-arr-button">
+							</div>
+							<div class="zoom-button" onclick="zoomImage(this)">
+								<img height="20px" src="images/catalog/zoom1.png"/>
+							</div>
+							<div class="right-arr-button">
+							</div>
+						</div>
+					</div>
+					<div class="colors-block">
+							<div class="color-circle white-color"></div>
+							<div class="color-circle black-color"></div>
+							<div class="color-circle pink-color"></div>
+							<div class="color-circle green-color"></div>
+							<div class="color-circle yellow-color"></div>
+							<div class="color-circle red-color"></div>
+							
+						</div>
+					<div class="item-description-block">
+						<div class="material-block">
+						Состав: 100% Хлопок (Суприм)
+						</div>
+						<div class="description-block">
+						Футболка женская, приталенная с коротким маленьким рукавчиком. Подойдет на каждый день и для занятий спортом.<br/>
+						Рибана на круглом вырезе  с добавлением 5 % лайкры позволяет сохранить форму и не растянуться. Стойкое качественное окрашивание сохраняет цвет и предотвращает от выгорания.    
+						</div>
+						<div class="density-block">
+						Плотность 155- 160 гр. м² (в зависимости от цвета)
+						</div>
+						<div class="price-block">
+							<div class="price-text">
+								Цена:
+							</div>
+							<div class="price-num">
+								130 руб.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item item2">
+					<div class="item-header">
+						<div class="item-img-block">
+							<img class="item-img" src="images/catalog/goods/child-tsh/child-tsh-1.png"/>
+						</div>
+						<div class="item-caption">
+						Футболка с коротким рукавом
+						</div>		
+						<div class="item-description">
+						для детей
+						</div>		
+						<div class="control-block">
+							<div class="left-arr-button">
+							</div>
+							<div class="zoom-button" onclick="zoomImage(this)">
+								<img height="20px" src="images/catalog/zoom1.png"/>
+							</div>
+							<div class="right-arr-button">
+							</div>
+						</div>
+					</div>
+					<div class="colors-block">
+							<div class="color-circle white-color"></div>
+							<div class="color-circle black-color"></div>
+							<div class="color-circle pink-color"></div>
+							<div class="color-circle green-color"></div>
+							<div class="color-circle yellow-color"></div>
+							<div class="color-circle red-color"></div>
+							
+						</div>
+					<div class="item-description-block">
+						<div class="material-block">
+						Состав: 100% Хлопок (Суприм)
+						</div>
+						<div class="description-block">
+						Футболка из качественного хлопка, очень мягкая , с круглым вырезом , прямого кроя. Подойдёт для занятий спортом и в качестве базовой вещи гардероба.<br/>
+						Стойкое качественное окрашивание сохраняет цвет и предотвращает от выгорания.     
+						</div>
+						<div class="density-block">
+						Плотность 155- 160 гр. м² (в зависимости от цвета)
+						</div>
+						<div class="price-block">
+							<div class="price-text">
+								Цена:
+							</div>
+							<div class="price-num">
+								130 руб.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+				<div class="item-header">
+						<div class="item-img-block">
+							<img class="item-img" src="images/catalog/goods/uni-cap/uni-cap-1.png"/>
+						</div>
+						<div class="item-caption">
+						Бейсболка
+						</div>		
+						<div class="item-description">
+						one size
+						</div>		
+						<div class="control-block">
+							<div class="left-arr-button">
+							</div>
+							<div class="zoom-button" onclick="zoomImage(this)">
+								<img height="20px" src="images/catalog/zoom1.png"/>
+							</div>
+							<div class="right-arr-button">
+							</div>
+						</div>
+					</div>
+					<div class="colors-block">
+							<div class="color-circle white-color"></div>
+							<div class="color-circle black-color"></div>
+							<div class="color-circle pink-color"></div>
+							<div class="color-circle green-color"></div>
+							<div class="color-circle yellow-color"></div>
+							<div class="color-circle red-color"></div>
+							
+						</div>
+					<div class="item-description-block">
+						<div class="material-block">
+						Состав: 100% Хлопок (Саржа)
+						</div>
+						<div class="description-block">
+						Бейсболка однотонная полувелюровая.<br/>
+						Модель - Пятиклинка. <br/>
+						Размер регулируется металлической застёжкой.    
+						</div>
+						<div class="density-block">
+						Плотность 210 гр. м² (в зависимости от цвета)
+						</div>
+						<div class="price-block">
+							<div class="price-text">
+								Цена:
+							</div>
+							<div class="price-num">
+								150 руб.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+	
+	<div class="table-price-caption-panel">
+		<div class="contacts-caption-left-line-block">
+			<div class="contacts-bottom-line">
+			</div>	
+		</div>
+		<div class="table-price-caption-text">Таблица цен
+		<div class="contacts-bottom-line">
+			</div>	
+		</div>
+		<div class="contacts-caption-right-line-block">
+			<div class="table-price-middle-line">
+			</div>			
+		</div>	
+	</div>
+	
+	<div class="price-panel">
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td head-td">Тип / Количество</div>
+				<div class="table-td head-td">до 100 шт.</div>
+				<div class="table-td head-td">100-500 шт.</div>
+				<div class="table-td head-td">500-1000 шт.</div>
+				<div class="table-td head-td">более 1000 шт.</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td capt-td">Футболка с коротким рукавом</div>
+				<div class="table-td">140 руб.</div>
+				<div class="table-td">130 руб.</div>
+				<div class="table-td">120 руб.</div>
+				<div class="table-td">110 руб.</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td capt-td">Футболка с длинным рукавом</div>
+				<div class="table-td">145 руб.</div>
+				<div class="table-td">135 руб.</div>
+				<div class="table-td">125 руб.</div>
+				<div class="table-td">115 руб.</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td capt-td">Футболка поло</div>
+				<div class="table-td">145 руб.</div>
+				<div class="table-td">140 руб.</div>
+				<div class="table-td">135 руб.</div>
+				<div class="table-td">130 руб.</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td capt-td">Бейсболка</div>
+				<div class="table-td">130 руб.</div>
+				<div class="table-td">120 руб.</div>
+				<div class="table-td">110 руб.</div>
+				<div class="table-td">100 руб.</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="size-caption-panel">
+		<div class="contacts-caption-left-line-block">
+			<div class="contacts-middle-line">
+			</div>	
+		</div>
+		<div class="size-caption-text">Размерные сетки
+		<div class="contacts-bottom-line">
+			</div>	
+		</div>
+		<div class="contacts-caption-right-line-block">
+			<div class="contacts-bottom-line">
+			</div>	
+		</div>	
+	</div>
+	
+	<div class="input-slip-panel">
+		<div class="input-slip-block">
+			<div class="button-slip-block">
+				<input class="button-slip-input" type="button" value="мужские размеры" onclick="showPanel('men',this)">
+			</div>
+			<div class="button-slip-block">
+				<input class="button-slip-input" type="button" value="женские размеры" onclick="showPanel('wmen',this)">
+			</div>
+			<div class="button-slip-block">
+				<input class="button-slip-input button-slip-input-activated" type="button" value="детские размеры" onclick="showPanel('children',this)">
+			</div>
+		</div>
+	</div>
+	
+	<div class="size-panel" id="men-polo" style="display: none;">
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td long-td table-td-m head-td">Наименование мерки</div>
+				<div class="table-td table-td-m head-td">Допуск<br/>+ / -</div>
+				<div class="table-td table-td-m head-td">XS</div>
+				<div class="table-td table-td-m head-td">S</div>
+				<div class="table-td table-td-m head-td">M</div>
+				<div class="table-td table-td-m head-td">L</div>
+				<div class="table-td table-td-m head-td">XL</div>
+				<div class="table-td table-td-m head-td">2XL</div>
+				<div class="table-td table-td-m head-td">3XL</div>
+				<div class="table-td table-td-m head-td">4XL</div>
+				<div class="table-td table-td-m head-td">5XL</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td long-td table-td-m capt-td">Длина/Ширина изделия</div>
+				<div class="table-td table-td-m">2/1</div>
+				<div class="table-td table-td-m">66/48</div>
+				<div class="table-td table-td-m">68/50</div>
+				<div class="table-td table-td-m">70/52</div>
+				<div class="table-td table-td-m">71/54</div>
+				<div class="table-td table-td-m">72/56</div>
+				<div class="table-td table-td-m">75/58</div>
+				<div class="table-td table-td-m">75/60</div>
+				<div class="table-td table-td-m">76/62</div>
+				<div class="table-td table-td-m">76/64</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td long-td table-td-m capt-td">Длина рукава</div>
+				<div class="table-td table-td-m">1</div>
+				<div class="table-td table-td-m">20</div>
+				<div class="table-td table-td-m">21</div>
+				<div class="table-td table-td-m">21</div>
+				<div class="table-td table-td-m">22</div>
+				<div class="table-td table-td-m">22</div>
+				<div class="table-td table-td-m">24</div>
+				<div class="table-td table-td-m">25</div>
+				<div class="table-td table-td-m">25</div>
+				<div class="table-td table-td-m">26</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td long-td table-td-m capt-td">Ширина рукава верх/низ</div>
+				<div class="table-td table-td-m">1/0.5</div>
+				<div class="table-td table-td-m">18/15</div>
+				<div class="table-td table-td-m">19/15.5</div>
+				<div class="table-td table-td-m">20/16</div>
+				<div class="table-td table-td-m">21/16.5</div>
+				<div class="table-td table-td-m">21.5/17</div>
+				<div class="table-td table-td-m">22/17.5</div>
+				<div class="table-td table-td-m">23/18</div>
+				<div class="table-td table-td-m">24/18.5</div>
+				<div class="table-td table-td-m">25/19</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td long-td table-td-m capt-td">Высота проймы</div>
+				<div class="table-td table-td-m">1</div>
+				<div class="table-td table-td-m">19</div>
+				<div class="table-td table-td-m">20</div>
+				<div class="table-td table-td-m">21</div>
+				<div class="table-td table-td-m">22</div>
+				<div class="table-td table-td table-td-m">23</div>
+				<div class="table-td table-td-m">24</div>
+				<div class="table-td table-td-m">25</div>
+				<div class="table-td table-td-m">26</div>
+				<div class="table-td table-td-m">27</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td long-td table-td-m capt-td">Ширина плеч</div>
+				<div class="table-td table-td-m">1</div>
+				<div class="table-td table-td-m">43</div>
+				<div class="table-td table-td-m">44</div>
+				<div class="table-td table-td-m">45.5</div>
+				<div class="table-td table-td-m">47</div>
+				<div class="table-td table-td-m">48</div>
+				<div class="table-td table-td-m">49</div>
+				<div class="table-td table-td-m">50</div>
+				<div class="table-td table-td-m">51</div>
+				<div class="table-td table-td-m">52</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td long-td table-td-m capt-td">Высота планки</div>
+				<div class="table-td table-td-m">0.5</div>
+				<div class="table-td table-td-m">15</div>
+				<div class="table-td table-td-m">15</div>
+				<div class="table-td table-td-m">15</div>
+				<div class="table-td table-td-m">15</div>
+				<div class="table-td table-td-m">15</div>
+				<div class="table-td table-td-m">15</div>
+				<div class="table-td table-td-m">15</div>
+				<div class="table-td table-td-m">15</div>
+				<div class="table-td table-td-m">15</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td long-td table-td-m capt-td">Высота шлицы</div>
+				<div class="table-td table-td-m">0.5</div>
+				<div class="table-td table-td-m">5</div>
+				<div class="table-td table-td-m">5</div>
+				<div class="table-td table-td-m">5</div>
+				<div class="table-td table-td-m">5</div>
+				<div class="table-td table-td-m">5</div>
+				<div class="table-td table-td-m">6</div>
+				<div class="table-td table-td-m">6</div>
+				<div class="table-td table-td-m">6</div>
+				<div class="table-td table-td-m">6</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td long-td table-td-m capt-td">Ширина воротника по отлету</div>
+				<div class="table-td table-td-m">0.5</div>
+				<div class="table-td table-td-m">7.5</div>
+				<div class="table-td table-td-m">7.5</div>
+				<div class="table-td table-td-m">7.5</div>
+				<div class="table-td table-td-m">7.5</div>
+				<div class="table-td table-td-m">7.5</div>
+				<div class="table-td table-td-m">8.5</div>
+				<div class="table-td table-td-m">8.5</div>
+				<div class="table-td table-td-m">8.5</div>
+				<div class="table-td table-td-m">8.5</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td long-td table-td-m capt-td">Ширина/Глубина горловины</div>
+				<div class="table-td table-td-m">0.5</div>
+				<div class="table-td table-td-m">16/8</div>
+				<div class="table-td table-td-m">16.5/8.5</div>
+				<div class="table-td table-td-m">17/8.5</div>
+				<div class="table-td table-td-m">17.5/9</div>
+				<div class="table-td table-td-m">18/9</div>
+				<div class="table-td table-td-m">18.5/9.5</div>
+				<div class="table-td table-td-m">19/9.5</div>
+				<div class="table-td table-td-m">19.5/10</div>
+				<div class="table-td table-td-m">20/10</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td long-td table-td-m capt-td">Ширина манжет</div>
+				<div class="table-td table-td-m">0.2</div>
+				<div class="table-td table-td-m">2.5</div>
+				<div class="table-td table-td-m">2.5</div>
+				<div class="table-td table-td-m">2.5</div>
+				<div class="table-td table-td-m">2.5</div>
+				<div class="table-td table-td-m">2.5</div>
+				<div class="table-td table-td-m">2.5</div>
+				<div class="table-td table-td-m">2.5</div>
+				<div class="table-td table-td-m">2.5</div>
+				<div class="table-td table-td-m">2.5</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td long-td table-td-m capt-td">Длина воротника</div>
+				<div class="table-td table-td-m">1</div>
+				<div class="table-td table-td-m">38</div>
+				<div class="table-td table-td-m">39</div>
+				<div class="table-td table-td-m">40</div>
+				<div class="table-td table-td-m">41</div>
+				<div class="table-td table-td-m">42</div>
+				<div class="table-td table-td-m">43</div>
+				<div class="table-td table-td-m">44</div>
+				<div class="table-td table-td-m">45</div>
+				<div class="table-td table-td-m">46</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="size-panel" id="men-long" style="display: none;">
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td head-td">Наименование мерки</div>
+				<div class="table-td head-td">Допуск<br/>+ / -</div>
+				<div class="table-td head-td">S</div>
+				<div class="table-td head-td">M</div>
+				<div class="table-td head-td">L</div>
+				<div class="table-td head-td">XL</div>
+				<div class="table-td head-td">2XL</div>
+				<div class="table-td head-td">3XL</div>
+				<div class="table-td head-td">4XL</div>
+				<div class="table-td head-td">5XL</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td capt-td">Российский размер</div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td capt-td">Рост</div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td capt-td">Длина от угла плечевого шва и горловины до низа</div>
+				<div class="table-td">2</div>
+				<div class="table-td">66</div>
+				<div class="table-td">68</div>
+				<div class="table-td">70</div>
+				<div class="table-td">72</div>
+				<div class="table-td">74</div>
+				<div class="table-td">76</div>
+				<div class="table-td">78</div>
+				<div class="table-td">80</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td capt-td">Ширина на уровне груди</div>
+				<div class="table-td">1</div>
+				<div class="table-td">50</div>
+				<div class="table-td">52</div>
+				<div class="table-td">54</div>
+				<div class="table-td">56</div>
+				<div class="table-td">58</div>
+				<div class="table-td">60</div>
+				<div class="table-td">62</div>
+				<div class="table-td">64</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td capt-td">Длина рукава</div>
+				<div class="table-td">1</div>
+				<div class="table-td">60</div>
+				<div class="table-td">60</div>
+				<div class="table-td">61</div>
+				<div class="table-td">62</div>
+				<div class="table-td">63</div>
+				<div class="table-td">64</div>
+				<div class="table-td">65</div>
+				<div class="table-td">66</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td capt-td">Ширина горловины</div>
+				<div class="table-td">1</div>
+				<div class="table-td">13</div>
+				<div class="table-td">14</div>
+				<div class="table-td">15</div>
+				<div class="table-td">15</div>
+				<div class="table-td">16</div>
+				<div class="table-td">16</div>
+				<div class="table-td">17</div>
+				<div class="table-td">17</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td capt-td">Глубина горловины</div>
+				<div class="table-td">1</div>
+				<div class="table-td">6.5</div>
+				<div class="table-td">7</div>
+				<div class="table-td">7</div>
+				<div class="table-td">7</div>
+				<div class="table-td">8</div>
+				<div class="table-td">8</div>
+				<div class="table-td">8</div>
+				<div class="table-td">8.5</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td capt-td">Ширина рукавов по краю</div>
+				<div class="table-td">1</div>
+				<div class="table-td">8.5</div>
+				<div class="table-td">9</div>
+				<div class="table-td">9</div>
+				<div class="table-td">10</div>
+				<div class="table-td">10</div>
+				<div class="table-td">10.5</div>
+				<div class="table-td">11</div>
+				<div class="table-td">11</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="size-panel" id="men" style="display: none;">
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td head-td">Наименование мерки</div>
+				<div class="table-td head-td">Допуск<br/>+ / -</div>
+				<div class="table-td head-td">S</div>
+				<div class="table-td head-td">M</div>
+				<div class="table-td head-td">L</div>
+				<div class="table-td head-td">XL</div>
+				<div class="table-td head-td">2XL</div>
+				<div class="table-td head-td">3XL</div>
+				<div class="table-td head-td">4XL</div>
+				<div class="table-td head-td">5XL</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td">Российский размер</div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td">Рост</div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td">Длина от угла плечевого шва и горловины до низа</div>
+				<div class="table-td">1</div>
+				<div class="table-td">66</div>
+				<div class="table-td">68</div>
+				<div class="table-td">70</div>
+				<div class="table-td">72</div>
+				<div class="table-td">74</div>
+				<div class="table-td">76</div>
+				<div class="table-td">78</div>
+				<div class="table-td">80</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td">Ширина на уровне груди</div>
+				<div class="table-td">1</div>
+				<div class="table-td">50</div>
+				<div class="table-td">52</div>
+				<div class="table-td">54</div>
+				<div class="table-td">56</div>
+				<div class="table-td">58</div>
+				<div class="table-td">60</div>
+				<div class="table-td">62</div>
+				<div class="table-td">64</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td">Длина рукава</div>
+				<div class="table-td">1</div>
+				<div class="table-td">21</div>
+				<div class="table-td">21</div>
+				<div class="table-td">22</div>
+				<div class="table-td">22</div>
+				<div class="table-td">24</div>
+				<div class="table-td">24</div>
+				<div class="table-td">25</div>
+				<div class="table-td">25</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td">Ширина горловины</div>
+				<div class="table-td">1</div>
+				<div class="table-td">13</div>
+				<div class="table-td">14</div>
+				<div class="table-td">15</div>
+				<div class="table-td">15</div>
+				<div class="table-td">16</div>
+				<div class="table-td">16</div>
+				<div class="table-td">17</div>
+				<div class="table-td">17</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td">Глубина горловины</div>
+				<div class="table-td">1</div>
+				<div class="table-td">6.5</div>
+				<div class="table-td">7</div>
+				<div class="table-td">7</div>
+				<div class="table-td">7.5</div>
+				<div class="table-td">8</div>
+				<div class="table-td">8.5</div>
+				<div class="table-td">9</div>
+				<div class="table-td">9.5</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td">Ширина рукавов по краю</div>
+				<div class="table-td">1</div>
+				<div class="table-td">16</div>
+				<div class="table-td">17</div>
+				<div class="table-td">18</div>
+				<div class="table-td">19</div>
+				<div class="table-td">20</div>
+				<div class="table-td">21</div>
+				<div class="table-td">22</div>
+				<div class="table-td">22</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="size-panel" id="wmen" style="display: none;">
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td head-td">Наименование мерки</div>
+				<div class="table-td head-td">Допуск<br/>+ / -</div>
+				<div class="table-td head-td">XS</div>
+				<div class="table-td head-td">S</div>
+				<div class="table-td head-td">M</div>
+				<div class="table-td head-td">L</div>
+				<div class="table-td head-td">XL</div>
+				<div class="table-td head-td"></div>
+				<div class="table-td head-td"></div>
+				<div class="table-td head-td"></div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td capt-td">Длина от угла плечевого шва и горловины до низа</div>
+				<div class="table-td">1</div>
+				<div class="table-td">58</div>
+				<div class="table-td">60</div>
+				<div class="table-td">62</div>
+				<div class="table-td">64</div>
+				<div class="table-td">65</div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td capt-td">Ширина на уровне груди</div>
+				<div class="table-td">1</div>
+				<div class="table-td">39</div>
+				<div class="table-td">41</div>
+				<div class="table-td">43</div>
+				<div class="table-td">44.5</div>
+				<div class="table-td">47</div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td capt-td">Длина рукава</div>
+				<div class="table-td">1</div>
+				<div class="table-td">13</div>
+				<div class="table-td">13.5</div>
+				<div class="table-td">14</div>
+				<div class="table-td">15</div>
+				<div class="table-td">16</div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td capt-td">Ширина по линии низа</div>
+				<div class="table-td">1</div>
+				<div class="table-td">40</div>
+				<div class="table-td">41.5</div>
+				<div class="table-td">43</div>
+				<div class="table-td">45</div>
+				<div class="table-td">47</div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td capt-td">Ширина подгиба линии низа и рукавов</div>
+				<div class="table-td">0.2</div>
+				<div class="table-td">2</div>
+				<div class="table-td">2</div>
+				<div class="table-td">2</div>
+				<div class="table-td">2</div>
+				<div class="table-td">2</div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td capt-td">Ширина рукавов по низу</div>
+				<div class="table-td">0.5</div>
+				<div class="table-td">13.5</div>
+				<div class="table-td">14.5</div>
+				<div class="table-td">15</div>
+				<div class="table-td">15.5</div>
+				<div class="table-td">16</div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="long-td table-td capt-td">Ширина рибаны</div>
+				<div class="table-td">0.2</div>
+				<div class="table-td">1.5</div>
+				<div class="table-td">1.5</div>
+				<div class="table-td">1.5</div>
+				<div class="table-td">1.5</div>
+				<div class="table-td">1.5</div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+				<div class="table-td"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="size-panel" id="children">
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td head-td capt-td">Наименование мерки</div>
+				<div class="table-td head-td">Допуск<br/>+ / -</div>
+				<div class="table-td head-td capt-td">XXXS<br/>Рост 128-132<br/>Российский размер 34</div>
+				<div class="table-td head-td capt-td">XXXS<br/>Рост 132-136<br/>Российский размер 36</div>
+				<div class="table-td head-td capt-td">XXXS<br/>Рост 136-140<br/>Российский размер 38</div>
+				<div class="table-td head-td capt-td">XXXS<br/>Рост 140-144<br/>Российский размер 40</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td capt-td">Длина от угла плечевого шва и горловины до низа</div>
+				<div class="table-td">0.7</div>
+				<div class="table-td">50</div>
+				<div class="table-td">53</div>
+				<div class="table-td">56</div>
+				<div class="table-td">60</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td capt-td">Ширина на уровне груди</div>
+				<div class="table-td">0.5</div>
+				<div class="table-td">36</div>
+				<div class="table-td">38</div>
+				<div class="table-td">40</div>
+				<div class="table-td">42.5</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td capt-td">Длина рукава</div>
+				<div class="table-td">0.5</div>
+				<div class="table-td">16</div>
+				<div class="table-td">17</div>
+				<div class="table-td">18</div>
+				<div class="table-td">19</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td capt-td">Ширина рукава по пройме</div>
+				<div class="table-td">0.5</div>
+				<div class="table-td">14</div>
+				<div class="table-td">15</div>
+				<div class="table-td">16</div>
+				<div class="table-td">17</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td capt-td">Ширина горловины</div>
+				<div class="table-td">0.5</div>
+				<div class="table-td">10</div>
+				<div class="table-td">11</div>
+				<div class="table-td">12</div>
+				<div class="table-td">13</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td capt-td">Глубина горловины</div>
+				<div class="table-td">0.5</div>
+				<div class="table-td">5</div>
+				<div class="table-td">5</div>
+				<div class="table-td">6</div>
+				<div class="table-td">6</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td capt-td">Ширина рукавов по краю</div>
+				<div class="table-td">0.5</div>
+				<div class="table-td">14</div>
+				<div class="table-td">15</div>
+				<div class="table-td">16</div>
+				<div class="table-td">17</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td capt-td">Глубина проймы рукава</div>
+				<div class="table-td">0.2</div>
+				<div class="table-td">1.5</div>
+				<div class="table-td">1.5</div>
+				<div class="table-td">1.5</div>
+				<div class="table-td">1.5</div>
+			</div>
+		</div>
+		<div class="table-panel">
+			<div class="table-block">
+				<div class="table-td capt-td">Ширина воротника</div>
+				<div class="table-td">0.2</div>
+				<div class="table-td">1.4</div>
+				<div class="table-td">1.4</div>
+				<div class="table-td">1.4</div>
+				<div class="table-td">1.4</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="input-slip-panel input-slip-panel-bottom">
+		<div class="input-slip-block">
+			<div class="button-slip-block">
+				<input class="man-only-input" type="button" value="короткий рукав" onclick="showMenPanel('men',this)" disabled="true">
+			</div>
+			<div class="button-slip-block">
+				<input class="man-only-input" type="button" value="длинный рукав" onclick="showMenPanel('men-long',this)" disabled="true">
+			</div>
+			<div class="button-slip-block">
+				<input class="man-only-input" type="button" value="футболка поло" onclick="showMenPanel('men-polo',this)" disabled="true">
+			</div>
+		</div>
+	</div>
+	<div class="feedback-panel">
+		<div class="feedback-caption">
+			Нужно время подумать?<br/>
+			Введите свои контактные данные и мы отправим Вам каталог по e-mail
+		</div>
+		<div class="inputs-panel">
+				<div class="input-block">
+					<input class="text-input" name="name2-input" type="text" placeholder="Ваше Имя" onchange="privacyInputCheck(1)">
+				</div>
+				<div class="input-block">
+					<input class="text-input" name="phonemail2-input" type="text" placeholder="Ваш e-mail" onchange="privacyInputCheck(1)">
+				</div>
+				<div class="input-block">
+					<input class="button-input" type="button" value="отправить" disabled="true">
+				</div>
+		</div>
+		<div class="privacy-panel">
+			<label class="privacy-input">
+			<input class="custom-input" type="checkbox" onclick="privacyInputCheck(1)"/>
+			<div class="custom-input-text"> Отправляя свои контактные данные, я соглашаюсь с&nbsp;<a href="privacy.pdf">Политикой конфиденциальности</a></div>
+	</label>
+	</div>
+	</div>
+	<div class="footer-panel">
+		<div class="links">
+			<div class="links-panel">
+			<div class="logo-big">
+				<img height="180px" width="180px" src="images/logobig.png"/>
+			</div>
+			<div class="links-block1">
+			<p><a href="index">Главная</a></p>
+			<p><a href="about">О компании</a></p>
+			<p><a href="catalog">Каталог</a></p>
+			<p><a href="print">Печать</a></p>
+			<p><a href="contacts">Контакты</a></p>
+			</div>
+			<div class="links-block2">
+			<p><a href="catalog#catalog">Футболки</a></p>
+			<p><a href="catalog#catalog">Футболки с длинным рукавом</a></p>
+			<p><a href="catalog#catalog">Футболки поло</a></p>
+			<p><a href="catalog#catalog">Бейсболки</a></p>
+			</div>
+			<div class="contacts">	
+			<div>
+                <div class="contact-icon phone">
+                    <img src="images/phone.png" width="40" height="40"/>
+                </div>
+                <div class="inline-elem contact-description">+7 (915) 136 78 68</div>
+            </div>
+            <div>
+				<div class="contact-icon mail">
+					<img src="images/mail.png" width="35" height="35"/>
+				</div>
+				<div class="inline-elem contact-description">zipfutbolka@mail.ru</div>
+			</div>
+			</div>
+			</div>
+		</div>
+		<div class="copyright">&copy; 2009-2020 Компания «ZIPfutbolka». Все права защищены</div>
+	</div>
+	
+	<div class="blackout-panel" onclick="hideZoom()" title="Закрыть">
+		<div class="close-block">
+			<img src="images/close-img.png" height="25px"/>
+		</div>
+		<div class="zoom-image-panel">
+			<img class="zoom-image"/>
+		</div>
+	</div>
+</body>
+</html>

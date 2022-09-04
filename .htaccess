@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+	RewriteRule ^index\.html$ / [R=301,L]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^([^\.]+)$ $1.html [NC,L]
+	
+</IfModule>

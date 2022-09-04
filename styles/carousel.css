@@ -1,0 +1,9 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-240px * 7 + 50px)); } }
+.partners-carousel-panel .carousel-items {
+  animation: scroll 50s linear infinite; }
+
+/*# sourceMappingURL=carousel.css.map */

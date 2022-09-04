@@ -1,0 +1,335 @@
+.about-company-panel
+		{
+			min-width: 1187px;
+			margin-top:50px;
+			height: 61px;
+			position: relative;
+		}
+		.about-company-line
+		{
+			border-top: 4px solid #F0F2F7;
+			box-shadow: 2px 2px 5px rgba(0, 0, 50, 0.1), -1px -1px 5px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.3);
+			position: absolute;
+			top: 15px;
+			left: 0;
+			width: 48.5%;
+		}
+		.about-company-caption
+		{	
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 50%;
+		}
+		.about-company-line-bottom
+		{
+			margin-top: 20px;
+			border-top: 4px solid #F0F2F7;
+			box-shadow: 2px 2px 5px rgba(0, 0, 50, 0.1), -1px -1px 5px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.3);
+		}
+		.caption
+		{
+			font-family: Lora;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 30px;
+			line-height: 38px;
+		}
+		
+		.about-company-text-panel
+		{
+			margin-top: 20px;
+			margin-left:auto;
+			margin-right: auto;
+			height: 568px;
+			width: 1187px;
+			position: relative;
+		}
+		.image-decorate
+		{
+			position: absolute;
+		}
+		.img1
+		{
+			left: 6px;
+			top: 90px;
+		}
+		.img2
+		{
+			left: 357px;
+			top: 73px;
+		}
+		.img3
+		{
+			left: 201px;
+			top: 227px;
+		}
+		.img4
+		{
+			left: 463px;
+			top: 315px;
+		}
+		.text-block
+		{
+			font-family: Lora;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 26px;
+			width: 50%;
+			height: 254px;
+			position: absolute;
+			right:0;
+			top: 130px;
+		}
+		.facts-panel
+		{
+			margin-top:97px;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			width: 1180px;
+			height: 228px;
+		}
+		.text-fact
+		{
+			background: #F0F2F7;
+			box-shadow: 2px 2px 5px rgba(0, 0, 50, 0.1), -1px -1px 5px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.3);
+			width: 334px;
+			padding-top: 14px;
+			padding-bottom: 14px;
+			font-family: Lora;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 26px;
+		}
+		.text-f
+		{
+			width: 268px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.hor-line
+		{
+			border: 2px solid #F0F2F7;
+			box-shadow: 2px 2px 5px rgba(0, 0, 50, 0.2), inset -2px -2px 5px rgba(235, 235, 235, 0.9);
+			position: absolute;
+			width:66px;
+		}
+		.line-left
+		{
+			left: 334px;
+			top: 41px;
+		}
+		.num-fact
+		{
+			font-family: Lora;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 30px;
+			line-height: 38px;
+			padding-top: 21px;
+			padding-bottom: 21px;
+			width: 80px;
+			background: #F0F2F7;
+			box-shadow: 2px 2px 5px rgba(0, 0, 50, 0.1), -1px -1px 5px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.3);
+			text-align: center;
+		}
+		.left-num-fact
+		{
+			font-family: Lora;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 30px;
+			line-height: 38px;
+			position: absolute;
+			left: 402px;
+			top: 0;
+		}
+		.right-text-fact
+		{
+			position: absolute;
+			right: 0;
+			top:0;
+		}
+		.right-num-fact
+		{
+			position: absolute;
+			top:0;
+			right: 402px;
+		}
+		.line-right
+		{
+			position: absolute;
+			top:40px;
+			right: 334px;
+		}
+		.center-num-fact
+		{
+			position: absolute;
+			top:0;
+			right: 550px;
+		}
+		.ver-line
+		{
+			transform: rotate(-90deg);
+			position: absolute;
+			right: 557px;
+			top: 113px;
+			
+		}
+		.center-text-fact
+		{
+			width: 376px;
+			text-align: center;
+			position: absolute;
+			bottom:0;
+			right: 402px;
+		}
+		.why-panel
+		{
+			height:61px;
+			width: 100%;
+			min-width: 1187px;
+			margin-top: 70px;
+			position:relative;
+		}
+		.why-left-block
+		{
+			position: absolute;
+			bottom:0;
+			left:0;
+			width: 50%;
+			border-bottom: 4px solid #F0F2F7;
+			box-shadow: 2px 2px 5px rgba(0, 0, 50, 0.1), -1px -1px 5px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.3);
+		}
+		.why-right-block
+		{
+			position: absolute;
+			bottom:0;
+			right:0;
+			width: 50%;
+			height: 100%;
+		}
+		.why-caption-block
+		{
+			width: 180px;
+			height: 100%;
+			float: left;
+			display: block;
+		}
+		.why-right-line-block
+		{
+			height: 100%;
+			display: flex;
+			position: relative;
+		}
+		.why-line-bottom
+		{
+			position: absolute;
+			width:180px;
+			bottom:0;
+			border-bottom: 4px solid #F0F2F7;
+			box-shadow: 2px 2px 5px rgba(0, 0, 50, 0.1), -1px -1px 5px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.3);
+		}
+		.why-line-right
+		{
+		position: absolute;
+			right: 0;
+			width: 95%;
+			height: 0;
+			margin-top: 19px;
+			border-bottom: 4px solid #F0F2F7;
+			box-shadow: 2px 2px 5px rgba(0, 0, 50, 0.1), -1px -1px 5px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.3);
+			
+		}
+		
+		.why-text-panel
+		{
+			position: relative;
+			width: 1181px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 127px;
+		}
+		.why-text-block
+		{
+			font-family: Lora;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 26px;
+			width: 50%;
+			position: absolute;
+			right: 0;
+			top: 0px;
+			
+		}
+		.sub-text-block p
+		{
+			margin-bottom: 20px;	
+			font-weight: bold;
+			margin-top: 47px;
+		}
+		.top-block p
+		{
+			margin-top: 0;
+		}
+		.why-image
+		{
+			position: absolute;
+			left: 108px;
+			top: -87px;
+		}
+		.partners-panel
+		{
+			min-width: 1187px;
+			margin-top:68px;
+			height: 61px;
+			position: relative;
+		}
+		.partners-line
+		{
+			border-top: 4px solid #F0F2F7;
+			box-shadow: 2px 2px 5px rgba(0, 0, 50, 0.1), -1px -1px 5px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.3);
+			position: absolute;
+			top: 15px;
+			left: 0;
+			width: 48.5%;
+		}
+		.partners-caption
+		{	
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 50%;
+		}
+		.partners-line-bottom
+		{
+			margin-top: 20px;
+			border-top: 4px solid #F0F2F7;
+			box-shadow: 2px 2px 5px rgba(0, 0, 50, 0.1), -1px -1px 5px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.3);
+		}
+		.partners-carousel-panel
+		{
+			height: 70px;
+			width: 1182px;
+			margin-top: 50px;
+			margin-bottom: 70px;
+			margin-left: auto;
+			margin-right: auto;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		.partner-block
+		{
+			width: 180px;
+			height: 60px;
+			display: inline-block;
+			margin-left: 20px;
+			background: white;
+			/*background: #F0F2F7;*/
+			box-shadow: 2px 2px 5px rgba(0, 0, 50, 0.1), -1px -1px 5px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.3);
+			cursor: pointer;
+		}

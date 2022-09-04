@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.feedback-button-decorate {
+  position: relative;
+  background: #CCCCD7;
+  background-clip: padding-box;
+  /* !importanté */
+  border: solid 1px transparent;
+  /* !importanté */ }
+  .feedback-button-decorate:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    margin: -1px;
+    /* !importanté */
+    border-radius: inherit;
+    /* !importanté */
+    background: linear-gradient(to right, #C784A5, #F6BEB0); }
+
+/*# sourceMappingURL=catalog.css.map */
